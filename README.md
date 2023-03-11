@@ -6,13 +6,13 @@
   </a>
 </p>
 
-> Clean and minimalist React Native template for a quick start with TypeScript.
+> The base React Native template with Storybook added on top 
 
 ## :star: Features
 
 - bootstrap with the [React Native CLI](https://github.com/react-native-community/cli)
 - comes with @storybook/react-native and @storybook/addon-react-native-web
-- based on the typescript [template](https://github.com/react-native-community/react-native-template-typescript)
+- based on the official template [template](https://github.com/facebook/react-native/tree/main/template)
 
 ## Usage
 
