@@ -1,11 +1,5 @@
 #  React Native Storybook Template
 
-<p>
-  <a href="https://github.com/dannyhw/react-native-template-storybook/actions/workflows/npm-publish.yml">
-    <img alt="Build Status" src="https://github.com/dannyhw/react-native-template-storybook/actions/workflows/npm-publish.yml/badge.svg" />
-  </a>
-</p>
-
 > The base React Native template with Storybook added on top 
 
 ## :star: Features
