@@ -40,7 +40,7 @@
     "@storybook/addon-ondevice-backgrounds": "7.6.10-alpha.1",
     "@storybook/addon-ondevice-controls": "7.6.10-alpha.1",
     "@storybook/addon-ondevice-notes": "7.6.10-alpha.1",
-    "@storybook/addon-react-native-web": "^0.0.19",
+    "@storybook/addon-react-native-web": "^0.0.22",
     "@storybook/react": "^7.6.10",
     "@storybook/react-native": "7.6.10-alpha.1",
     "@storybook/react-webpack5": "^7.6.10",
