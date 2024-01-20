@@ -21,3 +21,5 @@ const preview: Preview = {
   },
   decorators: [withBackgrounds],
 };
+
+export default preview;

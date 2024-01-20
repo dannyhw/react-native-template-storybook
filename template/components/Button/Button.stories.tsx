@@ -8,6 +8,8 @@ const meta: Meta<typeof MyButton> = {
   component: MyButton,
 };
 
+export default meta;
+
 export const Basic: StoryObj<typeof MyButton> = {
   args: {
     text: "Hello World",
