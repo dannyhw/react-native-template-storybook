@@ -8,6 +8,9 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint .",
+    "storybook": "STORYBOOK_ENABLED=true react-native start",
+    "storybook:ios": "STORYBOOK_ENABLED=true react-native run-ios",
+    "storybook:android": "STORYBOOK_ENABLED=true react-native run-android",
     "storybook-generate": "sb-rn-get-stories --config-path .ondevice",
     "storybook-watcher": "sb-rn-watcher --config-path .ondevice",
     "storybook:web": "storybook dev -p 6006",
@@ -57,7 +60,8 @@
     "prettier": "2.8.8",
     "react-test-renderer": "18.2.0",
     "storybook": "^7.6.10",
-    "typescript": "5.0.4"
+    "typescript": "5.0.4",
+    "babel-plugin-transform-inline-environment-variables": "^0.4.4"
   },
   "jest": {
     "preset": "react-native"
