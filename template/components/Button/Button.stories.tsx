@@ -3,14 +3,16 @@ import type { Meta, StoryObj } from "@storybook/react";
 
 import { MyButton } from "./Button";
 
-const meta: Meta<typeof MyButton> = {
+const meta = {
   title: "components/MyButton",
   component: MyButton,
-};
+} satisfies Meta<typeof MyButton>;
 
 export default meta;
 
-export const Basic: StoryObj<typeof MyButton> = {
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
   args: {
     text: "Hello World",
     color: "purple",
