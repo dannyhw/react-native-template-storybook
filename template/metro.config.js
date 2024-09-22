@@ -1,11 +1,8 @@
 const { getDefaultConfig, mergeConfig } = require("@react-native/metro-config");
 const path = require("path");
+const withStorybook = require('@storybook/react-native/metro/withStorybook');
 
-const { generate } = require("@storybook/react-native/scripts/generate");
-
-generate({
-  configPath: path.resolve(__dirname, "./.ondevice"),
-});
+const defaultConfig = getDefaultConfig(__dirname);
 
 /**
  * Metro configuration
@@ -39,4 +36,9 @@ const config = {
   },
 };
 
-module.exports = mergeConfig(getDefaultConfig(__dirname), config);
+const finalConfig = mergeConfig(defaultConfig, config);
+
+module.exports = withStorybook(finalConfig, {
+    enabled: process.env.STORYBOOK_ENABLED === 'true',
+    configPath: path.resolve(__dirname, './.ondevice'),
+});
