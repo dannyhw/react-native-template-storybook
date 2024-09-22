@@ -11,9 +11,6 @@ const defaultConfig = getDefaultConfig(__dirname);
  * @type {import('metro-config').MetroConfig}
  */
 const config = {
-  transformer: {
-    unstable_allowRequireContext: true,
-  },
   resolver: {
     resolveRequest: (context, moduleName, platform) => {
       const defaultResolveResult = context.resolveRequest(
