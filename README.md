@@ -1,3 +1,5 @@
+![picture of storybook](https://github.com/user-attachments/assets/cf98766d-8b90-44ab-b718-94ab16e63205)
+
 #  React Native Storybook Template
 
 > The base React Native template with Storybook added on top 
