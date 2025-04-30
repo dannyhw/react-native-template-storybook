@@ -6,7 +6,7 @@
 
 - bootstrap with the [React Native CLI](https://github.com/react-native-community/cli)
 - comes with @storybook/react-native and @storybook/addon-react-native-web
-- based on the official [template](https://github.com/facebook/react-native/tree/main/packages/react-native/template)
+- based on the official [template](https://github.com/react-native-community/template)
 
 ## Usage
 
