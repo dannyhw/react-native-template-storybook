@@ -1,7 +1,7 @@
-module.exports = {
-  stories: [
-    '../components/**/*.stories.?(ts|tsx|js|jsx)'
-  ],
+import {StorybookConfig} from '@storybook/react-native';
+
+const main: StorybookConfig = {
+  stories: ['../components/**/*.stories.?(ts|tsx|js|jsx)'],
    addons: [
     '@storybook/addon-ondevice-notes',
     '@storybook/addon-ondevice-controls',
@@ -9,3 +9,5 @@ module.exports = {
     '@storybook/addon-ondevice-actions',
   ],
 };
+
+export default main;
