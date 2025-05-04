@@ -1,5 +1,4 @@
 const { getDefaultConfig, mergeConfig } = require("@react-native/metro-config");
-const path = require("path");
 const withStorybook = require('@storybook/react-native/metro/withStorybook');
 
 const defaultConfig = getDefaultConfig(__dirname);
@@ -17,5 +16,4 @@ const finalConfig = mergeConfig(defaultConfig, config);
 module.exports = withStorybook(finalConfig, {
     enabled: process.env.STORYBOOK_ENABLED === 'true',
     onDisabledRemoveStorybook: true,
-    configPath: path.resolve(__dirname, './.rnstorybook'),
 });
