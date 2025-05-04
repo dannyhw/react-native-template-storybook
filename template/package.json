@@ -67,5 +67,19 @@
   },
   "engines": {
     "node": ">=18"
+  },
+  "resolutions": {
+    "react-docgen-typescript": "2.2.2",
+    "react": "19.0.0"
+  },
+  "overrides": {
+    "react-docgen-typescript": "2.2.2",
+    "react": "19.0.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "react-docgen-typescript": "2.2.2",
+      "react": "19.0.0"
+    }
   }
 }
