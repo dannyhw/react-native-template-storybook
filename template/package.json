@@ -70,16 +70,19 @@
   },
   "resolutions": {
     "react-docgen-typescript": "2.2.2",
-    "react": "19.0.0"
+    "react": "19.0.0",
+    "react-native-web": "^0.20.0"
   },
   "overrides": {
     "react-docgen-typescript": "2.2.2",
-    "react": "19.0.0"
+    "react": "19.0.0",
+    "react-native-web": "^0.20.0"
   },
   "pnpm": {
     "overrides": {
       "react-docgen-typescript": "2.2.2",
-      "react": "19.0.0"
+      "react": "19.0.0",
+      "react-native-web": "^0.20.0"
     }
   }
 }
