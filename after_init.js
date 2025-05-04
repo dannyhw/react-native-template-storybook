@@ -2,11 +2,11 @@
 
 const fs = require("fs");
 
-fs.rename("_ondevice", ".ondevice", function (err) {
+fs.rename("_rnstorybook", ".rnstorybook", function (err) {
   if (err) {
     throw err;
   } else {
-    console.log("\nSuccessfully configured the ondevice folder!");
+    console.log("\nSuccessfully configured the rnstorybook folder!");
   }
 });
 
