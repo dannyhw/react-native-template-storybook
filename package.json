@@ -1,6 +1,6 @@
 {
   "name": "react-native-template-storybook",
-  "version": "2.0.4",
+  "version": "3.0.1-0",
   "description": "React Native template for a quick start with storybook.",
   "scripts": {
     "test": "exit 0"
