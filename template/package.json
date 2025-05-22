@@ -31,6 +31,7 @@
   "devDependencies": {
     "@babel/core": "^7.25.2",
     "@babel/preset-env": "^7.25.3",
+    "@babel/preset-react": "^7.27.1",
     "@babel/runtime": "^7.25.0",
     "@react-native-community/cli": "18.0.0",
     "@react-native-community/cli-platform-android": "18.0.0",
@@ -69,20 +70,14 @@
     "node": ">=18"
   },
   "resolutions": {
-    "react-docgen-typescript": "2.2.2",
-    "react": "19.0.0",
-    "react-native-web": "^0.20.0"
+    "react-docgen-typescript": "2.2.2"
   },
   "overrides": {
-    "react-docgen-typescript": "2.2.2",
-    "react": "19.0.0",
-    "react-native-web": "^0.20.0"
+    "react-docgen-typescript": "2.2.2"
   },
   "pnpm": {
     "overrides": {
-      "react-docgen-typescript": "2.2.2",
-      "react": "19.0.0",
-      "react-native-web": "^0.20.0"
+      "react-docgen-typescript": "2.2.2"
     }
   }
 }
