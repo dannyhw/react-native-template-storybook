@@ -1,12 +1,11 @@
-import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View } from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });
 
@@ -20,8 +19,9 @@ function App() {
 
 let AppEntryPoint = App;
 
-if (process.env.STORYBOOK_ENABLED) {
-  AppEntryPoint = require("./.rnstorybook").default;
+// STORYBOOK_ENABLED is inlined at build time by babel-plugin-transform-inline-environment-variables
+if (process.env.STORYBOOK_ENABLED === 'true') {
+  AppEntryPoint = require('./.rnstorybook').default;
 }
 
 export default AppEntryPoint;
