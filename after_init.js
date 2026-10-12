@@ -1,19 +1,20 @@
 #!/usr/bin/env node
 
-const fs = require("fs");
+const fs = require('fs');
 
-fs.rename("_rnstorybook", ".rnstorybook", function (err) {
-  if (err) {
-    throw err;
-  } else {
-    console.log("\nSuccessfully configured the rnstorybook folder!");
-  }
-});
+// The React Native CLI only renames a fixed list of underscored dotfiles,
+// so the Storybook folders and the prettier ignore file are renamed here.
+const renames = [
+  ['_rnstorybook', '.rnstorybook'],
+  ['_storybook', '.storybook'],
+  ['_prettierignore', '.prettierignore'],
+];
 
-fs.rename("_storybook", ".storybook", function (err) {
-  if (err) {
-    throw err;
-  } else {
-    console.log("Successfully configured the storybook folder!");
+for (const [from, to] of renames) {
+  if (fs.existsSync(from)) {
+    fs.renameSync(from, to);
+    console.log(`Renamed ${from} to ${to}`);
   }
-});
+}
+
+console.log('\nStorybook is configured! Run `npm run storybook` to get started.');

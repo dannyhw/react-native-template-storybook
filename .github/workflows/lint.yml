@@ -9,9 +9,14 @@ jobs:
       run:
         working-directory: ./template
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: mv _rnstorybook .rnstorybook && mv _storybook .storybook && mv _prettierrc.js .prettierrc.js
       - name: Install dependencies
-        run: yarn
-      - run: mv _eslintrc.js .eslintrc.js && mv _prettierrc.js .prettierrc.js
+        run: npm install
       - name: Lint code
-        run: yarn lint
+        run: npm run lint
+      - name: Typecheck
+        run: npx tsc --noEmit
