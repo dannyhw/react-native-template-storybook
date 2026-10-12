@@ -3,7 +3,8 @@
   "version": "4.0.0",
   "description": "React Native template for a quick start with storybook.",
   "scripts": {
-    "test": "exit 0"
+    "test": "exit 0",
+    "changeset": "changeset"
   },
   "files": [
     "template",
@@ -27,5 +28,9 @@
   "bugs": {
     "url": "https://github.com/dannyhw/react-native-template-storybook/issues"
   },
-  "homepage": "https://github.com/dannyhw/react-native-template-storybook#readme"
+  "homepage": "https://github.com/dannyhw/react-native-template-storybook#readme",
+  "devDependencies": {
+    "@changesets/changelog-github": "^1.0.1",
+    "@changesets/cli": "^3.0.3"
+  }
 }
