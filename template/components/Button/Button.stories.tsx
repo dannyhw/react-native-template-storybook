@@ -4,6 +4,12 @@ import { MyButton } from './Button';
 
 const meta = {
   component: MyButton,
+  // On device, docgen reports optional props as `string | undefined`, which
+  // the color matcher rejects, so declare the type and control explicitly.
+  argTypes: {
+    color: { control: 'color', type: 'string' },
+    textColor: { control: 'color', type: 'string' },
+  },
 } satisfies Meta<typeof MyButton>;
 
 export default meta;
